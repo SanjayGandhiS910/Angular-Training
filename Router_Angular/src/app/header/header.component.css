@@ -1,0 +1,10 @@
+div{
+    background-color: lightgrey;
+    border: 2px solid darkgray;
+    text-align: center;
+    padding: 10px;
+}
+
+input, button{
+    font-size: 23px;
+}

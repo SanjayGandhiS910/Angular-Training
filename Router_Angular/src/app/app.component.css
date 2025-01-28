@@ -1,0 +1,15 @@
+button{
+    font-size: 23px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.active{
+    color: blue;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}

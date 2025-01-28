@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.active{
+    font-family: cursive;
+    font-weight: bolder;
+    color: orange;
+}
