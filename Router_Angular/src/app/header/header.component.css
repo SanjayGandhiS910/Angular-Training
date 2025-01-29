@@ -8,3 +8,8 @@ div{
 input, button{
     font-size: 23px;
 }
+
+a{
+    font-size: larger;
+    margin: 40px;
+}

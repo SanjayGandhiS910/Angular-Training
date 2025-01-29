@@ -2,6 +2,8 @@ import { AfterViewInit, Component, ElementRef, inject, OnInit, ViewChild } from 
 import { fromEvent, interval, Observable } from 'rxjs';
 import { AppServices } from './app.services';
 import { ActivatedRoute, Router } from '@angular/router';
+import { UserDetailsService } from './Services/userdetails.service';
+import { AuthService } from './Services/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +13,13 @@ import { ActivatedRoute, Router } from '@angular/router';
   providers: [AppServices]
 })
 export class AppComponent{
+
+  user: AuthService = inject(AuthService);
+
+  onLogOut(){
+    this.user.logout();
+    alert('isLoogged : '+this.user.isLogged)
+  }
 
   // router: Router = inject(Router);
   // rel: ActivatedRoute = inject(ActivatedRoute);

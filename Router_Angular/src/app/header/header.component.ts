@@ -15,7 +15,8 @@ export class HeaderComponent{
   rel: ActivatedRoute = inject(ActivatedRoute);
 
   onClick(){
-    this.router.navigate(['action'], { relativeTo: this.rel});
+    //this.router.navigate(['action'], { relativeTo: this.rel});
+    //console.log(this.rel.snapshot.params['id'])
   }
   
   // name: string = '';

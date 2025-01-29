@@ -2,5 +2,15 @@
     <h1>Name : <span>{{ name }}</span></h1>
 </div> -->
 
-<h1>Users Component</h1>
+<h1 #var>Users Component</h1>
 <a routerLink="/home">Return Home</a>
+
+<br><br><br>
+
+<span *ngFor="let item of user">
+    <a [routerLink]="'/users/user/'+item.id">{{ item.name }}</a>
+</span>
+
+<br><br><br>
+
+<a [routerLink]="'/users/user'" [queryParams]="{srh: 'html'}">Go back to html</a>

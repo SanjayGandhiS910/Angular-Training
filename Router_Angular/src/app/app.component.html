@@ -18,6 +18,8 @@
         <h2><a routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">About</a></h2>
         <h2><a routerLink="/header" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Header</a></h2>
         <h2><a routerLink="/users" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Users</a></h2>
+        <h2><a routerLink="/login" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">LogIn</a></h2>
+        <h2><a routerLink="/login" [queryParams]="{islogin: true}" (click)="onLogOut()" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">LogOut</a></h2>
     </div>
     <!-- <button (click)="onClick()">Click to go Header</button> -->
     <br>

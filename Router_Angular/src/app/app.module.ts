@@ -4,18 +4,13 @@ import { HeaderComponent } from "./header/header.component";
 import { UsersComponent } from "./users/users.component";
 import { BrowserModule } from "@angular/platform-browser";
 import { FormsModule } from "@angular/forms";
-import { RouterModule, Routes } from "@angular/router";
+import { RouterModule } from "@angular/router";
 import { HomeComponent } from "./home/home.component";
 import { AboutComponent } from "./about/about.component";
+import { User1Component } from "./users/user1/user1.component";
+import { RoutingModule } from "./routing.module";
+import { LoginComponent } from "./login/login.component";
 
-const routes: Routes = [
-    {path: '', component: HomeComponent},
-    {path: 'home', component: HomeComponent},
-    {path: 'about', component: AboutComponent},
-    {path: 'header', component: HeaderComponent},
-    {path: 'users', component: UsersComponent},
-    {path: '**', component: UsersComponent}
-]
 
 @NgModule({
     declarations: [
@@ -23,10 +18,12 @@ const routes: Routes = [
         HeaderComponent,
         UsersComponent,
         HomeComponent,
-        AboutComponent
+        AboutComponent,
+        User1Component,
+        LoginComponent
     ],
     bootstrap: [AppComponent],
-    imports: [BrowserModule, FormsModule, RouterModule.forRoot(routes)]
+    imports: [BrowserModule, FormsModule, RoutingModule]
 })
 export class AppModule{
 
